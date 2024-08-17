@@ -1,0 +1,36 @@
+.topListItem {
+    display: flex;
+    align-items: center;
+    width: 80%;
+
+    margin-bottom: 16px;
+    padding: 20px 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 16px;
+
+    &__position {
+        font-size: 32px;
+        margin-right: 12px;
+    }
+
+    &__name {
+        font-size: 28px;
+    }
+
+    &:nth-child(3) {
+        background-color: gold;
+        border-color: gold;
+    }
+
+    &:nth-child(4) {
+        // ??? Почему не работает first-child
+        background-color: silver;
+        border-color: silver;
+    }
+
+    &:nth-child(5) {
+        background-color: rgb(180, 53, 53);
+        border-color: rgb(180, 53, 53);
+    }
+}
